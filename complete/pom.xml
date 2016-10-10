@@ -48,6 +48,34 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-sources</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <tasks>
+                                <mkdir dir="target/archive/wars/gs-rest-service-0.1.0"/>
+                                <copy file="target/gs-rest-service-0.1.0.war" todir="target/archive/wars/gs-rest-service-0.1.0"/> 
+                                <copy file="DeploymentManifest.xml" todir="target/archive/" />
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        </execution>
+                    </executions>
+            </plugin>
+            <plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<descriptors>
+						<descriptor>archive.xml</descriptor>
+					</descriptors>
+				</configuration>
+			</plugin>
         </plugins>
     </build>
 
