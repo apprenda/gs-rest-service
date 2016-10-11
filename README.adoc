@@ -6,6 +6,7 @@
 |archive |Changes required for the build and packaging process to output an Apprenda archive with a Deployment Manifest.
 |===
 
+The final version is within the Complete folder. 
 
 :spring_version: current
 :toc:
