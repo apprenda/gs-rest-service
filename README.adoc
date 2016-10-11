@@ -1,8 +1,12 @@
----
-tags: [rest]
-projects: [spring-framework]
-experimental: Try the code inside your browser with -> http://beta.codenvy.com/f?id=9fq0busbm3tz7i8c
----
+|===
+|Tags | Description
+
+|war | Changes required to output a WAR file instead of a JAR file with embedded Tomcat.
+
+|archive |Changes required for the build and packaging process to output an Apprenda archive with a Deployment Manifest.
+|===
+
+
 :spring_version: current
 :toc:
 :project_id: gs-rest-service
