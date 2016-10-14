@@ -4,5 +4,12 @@
   <wars>
     <war name="gs-rest-service-0.1.0" javaVersion="JRE 1.8" logMessageFormat="%-6r [%15.15t] %-5p %c %x - %m%n" containerType="Tomcat 7" />
   </wars>
-  <applicationServices level="None" enforceSsl="False" sessionReplication="False" loadBalancerUrlConfiguration="Preserve" stickySessions="True" />
+   <customProperties>
+    <customProperty name="PII">
+      <values>
+        <propertyValue value="Yes" />
+      </values>
+    </customProperty>
+  </customProperties>
+  <applicationServices level="None" enforceSsl="False" sessionReplication="False" loadBalancerUrlConfiguration="Preserve" stickySessions="Flase" />
 </appManifest>
