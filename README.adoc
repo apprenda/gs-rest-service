@@ -6,6 +6,10 @@
 |archive |Changes required for the build and packaging process to output an Apprenda archive with a Deployment Manifest.
 |===
 
+The final version is within the Complete folder. 
+
+To build WAR file, run "mvn package". 
+To build the WAR file and package the Apprenda archive, run "mvn package assembly:assembly".
 
 :spring_version: current
 :toc:
