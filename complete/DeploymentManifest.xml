@@ -11,5 +11,5 @@
       </values>
     </customProperty>
   </customProperties>
-  <applicationServices level="None" enforceSsl="False" sessionReplication="False" loadBalancerUrlConfiguration="Preserve" stickySessions="Flase" />
+  <applicationServices level="None" enforceSsl="False" sessionReplication="False" loadBalancerUrlConfiguration="Preserve" stickySessions="False" />
 </appManifest>
