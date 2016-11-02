@@ -6,7 +6,7 @@
 |archive |Changes required for the build and packaging process to output an Apprenda archive with a Deployment Manifest.
 |===
 
-The final version is within the Complete folder. 
+The final version is within the Complete folder. An alreayd built and packaged archive can be find in the complete folder or here: https://github.com/apprenda/gs-rest-service/raw/master/complete/gs-rest-service.zip 
 
 To build WAR file, run "mvn package". 
 To build the WAR file and package the Apprenda archive, run "mvn package assembly:assembly".
