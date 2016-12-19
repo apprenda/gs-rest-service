@@ -11,6 +11,8 @@ The final version is within the Complete folder. An alreayd built and packaged a
 To build WAR file, run "mvn package". 
 To build the WAR file and package the Apprenda archive, run "mvn package assembly:assembly".
 
+The resulting files are located in the target directory. 
+
 :spring_version: current
 :toc:
 :project_id: gs-rest-service
