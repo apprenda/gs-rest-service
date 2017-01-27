@@ -41,7 +41,6 @@
         <java.version>1.8</java.version>
     </properties>
 
-
     <build>
         <plugins>
             <plugin>
@@ -59,6 +58,7 @@
                                 <mkdir dir="target/archive/wars/gs-rest-service-0.1.0"/>
                                 <copy file="target/gs-rest-service-0.1.0.war" todir="target/archive/wars/gs-rest-service-0.1.0"/> 
                                 <copy file="DeploymentManifest.xml" todir="target/archive/" />
+                                <zip destfile="target/archive.zip" basedir="target/archive/" />
                             </tasks>
                         </configuration>
                         <goals>
@@ -67,15 +67,6 @@
                         </execution>
                     </executions>
             </plugin>
-            <plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.5.3</version>
-				<configuration>
-					<descriptors>
-						<descriptor>archive.xml</descriptor>
-					</descriptors>
-				</configuration>
-			</plugin>
         </plugins>
     </build>
 
